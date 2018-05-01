@@ -1,3 +1,45 @@
+body,
+html {
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#calendar {
+  max-width: 220px; }
+  #calendar .month-header {
+    margin-top: 10px;
+    display: block;
+    width: 220px;
+    text-align: center;
+    background-color: #b5d589; }
+  #calendar .days-line {
+    display: block; }
+  #calendar .day-header {
+    display: inline-block;
+    width: 30px;
+    margin: 0.5px;
+    text-align: center; }
+  #calendar .day {
+    display: inline-block;
+    width: 30px;
+    margin: 0.5px;
+    text-align: center;
+    height: 18px;
+    vertical-align: top; }
+  #calendar .disabled-day {
+    background-color: #c1bcac;
+    content: "\0020"; }
+  #calendar .weekend {
+    background-color: #fced4b;
+    color: blue; }
+  #calendar .week-day {
+    background-color: #8cc63e;
+    color: black; }
+  #calendar .holiday {
+    background-color: #f58020; }
+  #calendar .invalid-data {
+    font-size: 20px;
+    color: red; }
+
 #app {
   width: auto;
   margin: auto;
@@ -41,8 +83,13 @@
       color: #fff;
       background-color: #3097D1;
       border-color: #2a88bd; }
-
-body,
-html {
-  font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    #app .input-container p {
+      font-size: 10px; }
+  #app .green {
+    color: #8cc63e; }
+  #app .gray {
+    color: #c1bcac; }
+  #app .yellow {
+    color: #fced4b; }
+  #app .orange {
+    color: #f58020; }

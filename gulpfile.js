@@ -4,14 +4,6 @@ const sass = require('gulp-sass');
 const webpack = require('webpack-stream'); 
 const $ = require('gulp-load-plugins')({lazy: true});
 
-gulp.task('babel', () =>
-   gulp.src('js/app.js')
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(gulp.dest('dist'))
-);
-
 gulp.task('sass', () =>
    gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -24,6 +16,7 @@ gulp.task('scripts', () =>
       output: {
         filename: '[name].js'
       },
+      watch: true,
       module: {
         rules: [
           {

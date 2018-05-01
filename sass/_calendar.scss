@@ -1,3 +1,53 @@
-.calendar{
-	
+#calendar{
+	max-width: 220px;
+	.month-header{
+		margin-top:10px;
+		display:block;
+		width: 220px;
+		text-align: center;
+		background-color: $header
+	}
+
+	.days-line{
+		display: block;
+	}
+	.day-header{
+		display: inline-block;
+		width: 30px;
+		margin:0.5px;
+		text-align: center;
+	}
+
+	.day{
+		display: inline-block;
+		width: 30px;
+		margin:0.5px;
+		text-align:center;
+		height: 18px;
+		vertical-align: top;
+	}
+
+	.disabled-day{
+		background-color: $gray;
+		content: "\0020";
+
+	}
+	.weekend{
+		background-color: $yellow;
+		color: blue;
+	}
+
+	.week-day{
+		background-color: $green;
+		color: black;
+	}
+
+	.holiday{
+		background-color: $orange;
+	}
+
+	.invalid-data{
+		font-size:20px;
+		color:red;
+	}
 }
