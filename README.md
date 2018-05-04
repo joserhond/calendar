@@ -1,6 +1,6 @@
 # Instructions
 
-All files are included, there is no need to run any command. Just clone and open the index file in a browser.
+Clone and open the index file in a browser.
 
 Name  
 José Eduardo Rhon
